@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenleaf Organics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav a:hover {
+            background-color: #e9ecef;
+        }
+        .hero-section {
+            padding: 30px;
+            background-color: #e6f7ff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .hero-section h1 {
+            color: #28a745;
+        }
+        .products-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+        .product-card h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .product-card p {
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #777;
+        }
+        .forms-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .form-box {
+            width: 40%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .form-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-box button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .form-box button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Greenleaf Organics</h1>
+        <p>Your source for the freshest organic produce online.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero-section">
+        <h2>Fresh, Organic Produce Delivered to Your Doorstep</h2>
+        <p>Discover a wide selection of organic fruits, vegetables, and more, sourced directly from local farms.</p>
+    </section>
+
+    <section class="products-section">
+        <div class="product-card">
+            <img src="https://divv19.github.io/demo-multiple/images/products/organic-apples.jpg" alt="Organic Apples">
+            <h3>Organic Apples</h3>
+            <p>Crisp and delicious organic apples, perfect for snacking or baking.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://divv19.github.io/demo-multiple/images/products/organic-bananas.jpg" alt="Organic Bananas">
+            <h3>Organic Bananas</h3>
+            <p>Sweet and creamy organic bananas, a healthy addition to your breakfast.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://divv19.github.io/demo-multiple/images/products/organic-carrots.jpg" alt="Organic Carrots">
+            <h3>Organic Carrots</h3>
+            <p>Fresh and crunchy organic carrots, great for salads or roasting.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://divv19.github.io/demo-multiple/images/products/organic-spinach.jpg" alt="Organic Spinach">
+            <h3>Organic Spinach</h3>
+            <p>Nutrient-rich organic spinach, perfect for smoothies or side dishes.</p>
+        </div>
+    </section>
+
+    <section class="forms-container">
+        <div class="form-box">
+            <h2>Signup</h2>
+            <form action="/signup" method="post">
+                <div class="form-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+
+        <div class="form-box">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Greenleaf Organics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
