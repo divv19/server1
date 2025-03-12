@@ -1,0 +1,13 @@
+// package.json
+// This file defines the dependencies for your Node.js server.
+// Run 'npm install' in your project directory to install these dependencies.
+{
+  "name": "server1",
+  "version": "1.0.0",
+  "description": "Node.js server for Greenleaf Organics website",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  }
+}
